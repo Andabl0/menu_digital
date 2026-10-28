@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       Swal.fire({
         title: 'Enviando tu pedido a cocina...',
         html: 'Estamos confirmando los ingredientes con el taquero 🌮',
-        timer: 3000, // Tarda 2 segundos simulando la conexión
+        timer: 2000, // Tarda 2 segundos simulando la conexión
         timerProgressBar: true,
         allowOutsideClick: false,
         didOpen: () => {
