@@ -2,63 +2,113 @@
 <html lang="es">
 
 <head>
-    <title>Menu Digital</title>
     <meta charset="UTF-8">
-    <link href="../css/style.css" rel="stylesheet">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Andablo · Inicio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
+    <!-- Cabecera y Menú semántico -->
     <header>
-        <div class="bar">
-        <div class="logo">Tacos Andablo</div>
-       <nav aria-label="Navegación Principal">
-      
-        <a href="">Inicio</a>
-        <a href="">Menú</a>
-        <a href="">Promociones</a>
-        <a href="">Nosotros</a>
-        <a href="">Inicio</a>
+        <nav class="navbar navbar-expand-lg navbar-custom py-2">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tacos Andablo 🌮 </a>
+                <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal">
+                    <i class="fa-solid fa-bars fa-lg text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        </div>
     </header>
 
-    <h1>Bienvenido a Tacos Andablo</h1>   
-    <p>Tu menu Digital!!</p>
- 
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Hero Banner -->
+        <section class="hero-box row align-items-center mb-5">
+            <div class="col-12 col-md-7 mb-4 mb-md-0">
+                <h1 class="display-4 fw-bold">¡Hoy se antoja algo con todo el sabor!</h1>
+                <p class="lead mt-3">Los mejores tacos de pastor, bistec, suadero y longaniza preparados al momento con
+                    tortillas calientitas y salsa de la casa.</p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <a href="menu.html" class="btn btn-crunch"><i class="fa-solid fa-utensils me-2"></i>Ver el menú</a>
+                    <a href="pedidos.html" class="btn btn-crunch-amarillo"><i
+                            class="fa-solid fa-motorcycle me-2"></i>Hacer pedido</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 text-center">
+                <img src="../../img/tacopastor.png" alt="Plato con ricos tacos al pastor tradicionales"
+                    class="img-fluid rounded-4 shadow">
+            </div>
+        </section>
 
-    <div class="div_padre">
-    <h1>Hoy se antoja algo rico!</h1>
+        <!-- Sección de recomendación con articles -->
+        <section class="my-5">
+            <h2 class="text-center mb-4">Los Consentidos de la Casa!</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <article class="card-taco p-3 h-100 d-flex flex-column justify-content-between">
+                        <img src="../../img/tacopastor.png" alt="Tacos al pastor doraditos con piña"
+                            class="rounded mb-3">
+                        <h3>Tacos al Pastor</h3>
+                        <p>Carne marinada con receta secreta, piña asada, cebolla, cilantro y limón al gusto.</p>
+                        <span class="badge bg-danger fs-6 align-self-start">$18 c/u</span>
+                    </article>
+                </div>
 
-    <p>En esta pagina encontraras tacos <br> de distintas carnes como: <br> 
-    longaniza, suadero, pastor, bistec, enchilada y más!!</p>
-    
-    <button>Ver el menu</button>
-    <button>Ordenar pedido</button>
-    </div>
+                <div class="col-12 col-md-4">
+                    <article class="card-taco p-3 h-100 d-flex flex-column justify-content-between">
+                        <img src="../../img/taco1.png" alt="Tacos de bistec asado con queso" class="rounded mb-3">
+                        <h3>Tacos de Bistec</h3>
+                        <p>Bistec de res fresco a la plancha con cebollitas cambray y frijolitos charros.</p>
+                        <span class="badge bg-danger fs-6 align-self-start">$22 c/u</span>
+                    </article>
+                </div>
 
-    <div class="recomendacion">
-        <div class="card">
-            <img src="">
-            <h3>Tacos al pastor</h3>
-            <p>Con piña, cebolla y cilantro.</p>
+                <div class="col-12 col-md-4">
+                    <article class="card-taco p-3 h-100 d-flex flex-column justify-content-between">
+                        <img src="../../img/taco2.png" alt="Taco de suadero suave y jugoso" class="rounded mb-3">
+                        <h3>Tacos de Suadero</h3>
+                        <p>Suave, jugoso y dorado en su punto exacto. El clásico de las noches de taquería.</p>
+                        <span class="badge bg-danger fs-6 align-self-start">$20 c/u</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1"><strong>Tacos Andablo</strong> &copy; 2026 - Tradición y Sabor Taquero</p>
+            <small><i class="fa-solid fa-location-dot me-1"></i> Sucursal Centro · Servicio para llevar y
+                comedor</small>
         </div>
+    </footer>
 
-        <div class="card">
-            <img src="">
-            <h3>Tacos de Bistec</h3>
-            <p>Tortilla recién hecha, carne al momento y salsa casera.</p>
-        </div>
-
-        <div class="card">
-            <img src="">
-            <h3>Tacos de asada</h3>
-            <p>Ricos y delicioso con la receta de la casa.</p>
-        </div>
-    </div>
-
-    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
