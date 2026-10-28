@@ -1,0 +1,28 @@
+:root {
+  --color-rojo: #C8281E;
+  --color-mostaza: #F2B705;
+  --color-fondo: #FFFBEF;
+  --color-texto: #2A1710;
+  --color-blanco: #FFFFFF;
+  --color-borde: #E8D9B8;
+}
+
+.card-taco {
+  background-color: var(--color-blanco);
+  border: 2px solid var(--color-borde);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card-taco:hover {
+  transform: translateY(-4px);
+}
+
+.card-taco img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+

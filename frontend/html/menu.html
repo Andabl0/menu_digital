@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos Andablo · Menú Completo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Tacos Andablo 🌮 </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <i class="fa-solid fa-bars fa-lg text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="menu.html">Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5">Nuestro Menú Taquero</h1>
+      <p class="lead">Preparados al instante con ingredientes frescos y carne de la mejor calidad.</p>
+    </div>
+
+    <!-- Menu de Tacos -->
+    <section class="mb-5">
+      <h2 class="border-bottom border-danger pb-2 mb-4"><i class="fa-solid fa-fire-burner me-2 text-danger"></i>Especialidades en Taco</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card-taco p-3 h-100">
+            <img src="../../img/tacopastor.png" alt="Orden de tacos al pastor" class="rounded mb-2">
+            <h4>Al Pastor Especial</h4>
+            <p>Con piña miel, cebolla desflemada y cilantro criollo.</p>
+            <p class="fw-bold text-danger">$18.00 MXN</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card-taco p-3 h-100">
+            <img src="../../img/taco1.png" alt="Tacos de bistec de res" class="rounded mb-2" >
+            <h4>Bistec Encebollado</h4>
+            <p>Carne magra a la plancha con cebolla caramelizada.</p>
+            <p class="fw-bold text-danger">$22.00 MXN</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card-taco p-3 h-100">
+            <img src="../../img/taco2.png" alt="Taco de longaniza roja" class="rounded mb-2">
+            <h4>Longaniza Artesanal</h4>
+            <p>Longaniza de pueblo con nopales asados y queso fresco.</p>
+            <p class="fw-bold text-danger">$20.00 MXN</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Bebidas y Acompañamientos -->
+    <section class="mb-5">
+      <h2 class="border-bottom border-danger pb-2 mb-4"><i class="fa-solid fa-glass-water me-2 text-danger"></i>Bebidas y Complementos</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <article class="card-taco p-3">
+            <img src="../../img/bebida2.png" alt="Bebida fresca" class="rounded mb-2">
+            <h4>Aguas Frescas Naturales (1 Litro)</h4>
+            <p>Horchata artesanal, Jamaica recién hecha o Limón con chía.</p>
+            <span class="badge bg-warning text-dark fs-6">$35.00 MXN</span>
+          </article>
+        </div>
+        <div class="col-12 col-md-6">
+          <article class="card-taco p-3">
+            <img src="../../img/botellas-de-refresco-vidrio-159484579.webp" alt="Botellas de Refresco" class="rounded mb-2">
+            <h4>Refresco de Vidrio (Variedad)</h4>
+            <p>Coca Cola, Sidral Mundet, Jarritos y Boing bien fríos.</p>
+            <span class="badge bg-warning text-dark fs-6">$25.00 MXN</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <p class="mb-1"><strong>Tacos Andablo</strong> &copy; 2026</p>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
