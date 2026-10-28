@@ -13,7 +13,7 @@
         rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Estilos propios -->
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -21,9 +21,12 @@
 
     <!-- Cabecera y Menú semántico -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <nav class="navbar navbar-expand-lg navbar-custom py-3">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Tacos Andablo 🌮</a>
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="../../img/logo.png" alt="Logo Tacos Andablo" height="40vh">
+                    <span>Tacos Andablo</span>
+                </a>
                 <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#menuPrincipal">
                     <i class="fa-solid fa-bars fa-lg text-white"></i>
@@ -33,8 +36,8 @@
                         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,13 +98,16 @@
             </div>
         </section>
     </main>
-
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/525611977446?text=Hola%20Tacos%20Andablo,%20quiero%20hacer%20un%20pedido"
+        class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
             <p class="mb-1"><strong>Tacos Andablo</strong> &copy; 2026 - Tradición y Sabor Taquero</p>
-            <small><i class="fa-solid fa-location-dot me-1"></i> Sucursal Centro · Servicio para llevar y
-                comedor</small>
+
         </div>
     </footer>
 
